@@ -1,17 +1,11 @@
 class Song 
-  attr_accessor :name, :title
+  attr_accessor :name, :title, :artist
   @@all = []
   def initialize(name)
     @name = name
-    @@all << self #shovels insance into array collection
+    @@all << self 
   end
-  def artist #reader
-    @artist #creates instance variable
-  end
-  def artist=(artist_obj) #writer
-    @artist = artist_obj #assigns the argument as a the value for the insatnce 
-  end
-  def self.all #retrieves array collection
+  def self.all 
     @@all
   end
   def artist_name
